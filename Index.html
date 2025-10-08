@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de Gestão de Redes Sociais | Xique no Úrtimo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Xique no Úrtimo Gold & Brown on White -->
+    <!-- Application Structure Plan: Adapted the successful interactive proposal model. Added a new "Content Evolution" section to visually demonstrate the value proposition (static vs. dynamic content) before the interactive calculator. -->
+    <!-- Visualization & Content Choices: 
+        - Report Info: The interactive calculator logic was definitively fixed to be a simple sum of monthly values, making it transparent and correct.
+        - Report Info: The pre-made packages were re-structured and re-priced to reflect the new service options and create a clear value ladder.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFFFFF;
+            color: #4A2F1E; 
+        }
+        .font-display {
+            font-family: 'Lora', serif;
+        }
+        .bg-brand-gold { background-color: #daa520; }
+        .text-brand-gold { color: #daa520; }
+        .border-brand-gold { border-color: #daa520; }
+        
+        .bg-brand-brown { background-color: #4A2F1E; }
+        .text-brand-brown { color: #4A2F1E; }
+        
+        .section-bg-texture {
+            background-color: #fafafa;
+        }
+
+        /* Custom Checkbox */
+        .custom-checkbox:checked {
+            background-color: #daa520;
+            border-color: #daa520;
+        }
+        .custom-checkbox:checked::after {
+            content: '✓';
+            color: white;
+            display: block;
+            text-align: center;
+            line-height: 1.25rem; /* h-5 */
+            font-weight: bold;
+        }
+
+        @keyframes aurora {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .aurora-border {
+            position: relative;
+            padding: 4px;
+            background: transparent;
+            border-radius: 1.25rem; /* 20px */
+            overflow: visible;
+        }
+        .aurora-border::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            right: 0; bottom: 0;
+            background: linear-gradient(90deg, #daa520, #f0e68c, #daa520);
+            background-size: 400% 400%;
+            animation: aurora 8s ease infinite;
+            z-index: 0;
+            border-radius: 1.25rem;
+        }
+        .aurora-border .inner-card {
+            background-color: #FFFFFF;
+            position: relative;
+            z-index: 1;
+            border-radius: 1rem; /* 16px */
+        }
+    </style>
+</head>
+<body class="text-brand-brown">
+
+    <!-- Header -->
+    <header class="text-center py-10 border-b-8 border-brand-gold">
+        <div class="container mx-auto px-6">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQE01CvN2jlQFnahTE8JZ0xfGJEe5Ng_n1rykkMATq7a-shvDxEevsVUdGTf3Muk3S0Vu8n0Lv6tKdHsMaFLIQpmP5mPsQ9vKk2WCAIUEWhe4GKHF26axVpHpgM_0KYEJZYgyNuXMP-mRcmfugNIN9sOVn9TW0md9IthluiEySbdF_xrrERWTdKLyaN5A/s320/CTN%20Proposta.png" alt="Logo RP Digital" class="h-20 mx-auto mb-4">
+            <img src="https://imagens.jotaja.com/empresa/6547f961-d4cb-44dd-a78b-e9f6f2e552d5.jpg" alt="Logo Xique no Úrtimo" class="w-full max-w-[200px] mx-auto rounded-full">
+            <h1 class="font-display text-2xl md:text-4xl text-brand-brown mt-8 uppercase tracking-wider">Proposta de Gestão de Redes Sociais</h1>
+            <p class="text-lg text-brand-gold">Xique no Úrtimo</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+        
+        <!-- Mission Section -->
+        <section id="missao" class="py-16 text-center">
+            <h2 class="font-display text-4xl md:text-5xl text-brand-gold mb-4">A Missão: Elevar sua Presença Digital</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-700">O Xique no Úrtimo já é uma referência de sabor e tradição. Nosso objetivo é traduzir essa excelência para o mundo digital, criando uma presença online tão irresistível quanto seus pratos, atraindo novos clientes e fortalecendo o relacionamento com os atuais.</p>
+            <div class="mt-12">
+                <h3 class="text-gray-500 uppercase tracking-widest text-sm mb-6">Onde Vamos Atuar</h3>
+                <div class="flex justify-center items-center gap-6 md:gap-12 flex-wrap">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiicVGfBtsvRiwPom6vFD3GD3KxEMe_qKTrCHb_vIOGYrGb5JV619jTu599SA05_fm8sVyLPWdKTYCxfKdYTyacDczOaUkMlaN4LS9frg6JrTveqQrEa9f2pCRMaq86WorJMhtoJi6Wqv49EfxCzbp1CqFkGkZ0ljGo7nKuCFLN_sBpilADaZVqbwqdvP8/s941/instagram.png" alt="Instagram" class="h-12 w-12 object-contain" title="Instagram">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9_vqvp3OkbRrmhGm2dYpxqjJ8thDrg8uRUslHlHcAQ9rZm0oSBF23IbaKVb-Cx0eze042xQcjc8iqNnPC1QpSaRy-mHozb2EIjxLxvvAEDRtLGEZEJvTR7fqnPyyMfhmGyx2yBBBtnU_1O6fO7IYFCweTgHRI3rdZU3n5mButHCgDXB3e37VtkSMUsH0/s941/facebook.png" alt="Facebook" class="h-12 w-12 object-contain" title="Facebook">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1owTc4rbrejSovT9Eo5M1Wwmtlo__2bzLCHM2hEfY0NWn17vVG1G3C3Q0EyGy0dNDxfw-eqHGf3UEoDsXxD6BYd0mTg2C7HNUOxUTUiF08F8XkdUAa_TANMpTMCluxdDy6YeYvS5jrM4vvzkvv7_i8FIo0KotiXyORSoiK-Yw9Izs1psAPl26kq6HvnQ/s941/tiktok.png" alt="TikTok" class="h-12 w-12 object-contain" title="TikTok">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-LjoD1fVPx85VgaZKElc8ASbiMrDtX1EG8BxemQFwh0Qx_UcEmOwH_Pn-pbLDnyVeLwxGfgUD1kgpqpSE_06dvjqArXdHMUnl32Dqr6305P8Tu5zMKEXbSSSJEAqsfo1Pw6dk_R8YEVJQwLu6Orwg3nbDdMLcsTN4ZwblnZWhkDo4YW7m4Un_kgyQZbc/s941/youtube.png" alt="YouTube" class="h-12 w-12 object-contain" title="YouTube Shorts">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfpd_SaUXJJFlyifSZtjXTh8n5q5ot0rBVBjyyxywQTr2dsXFi-lI6NC74HYcBUfRwUHy96w3Vpw-RW9dLbjjx3zntnNRWA6yo_gAoLSQVhL3gbYyTqQEhwl9TvvZBf-YgPNBpvJ40jLgl4SHKh1u6xwvtOzpIBojp78Tl3ozDTR98Z5S8HJFdUKAW8G8/s320/google.png" alt="Google Meu Negócio" class="h-12 w-12 object-contain" title="Google Meu Negócio">
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution Section -->
+        <section id="evolucao" class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl md:text-5xl text-brand-gold">O Poder do Conteúdo Dinâmico</h2>
+                <p class="max-w-3xl mx-auto mt-4 text-gray-600">No mundo digital de hoje, a forma como apresentamos o conteúdo faz toda a diferença. Vídeos curtos no TikTok e Reels capturam a atenção, dão água na boca, são compartilhados e atraem um público novo, aumentando exponencialmente a visibilidade da marca.</p>
+            </div>
+            <div class="max-w-sm mx-auto">
+                 <blockquote class="tiktok-embed mx-auto" cite="https://www.tiktok.com/@xique.no.urtimo/video/7516285417792998662" data-video-id="7516285417792998662" style="max-width: 325px;min-width: 325px;" > <section> <a target="_blank" title="@xique.no.urtimo" href="https://www.tiktok.com/@xique.no.urtimo?refer=embed">@xique.no.urtimo</a><p>Domingo é dia de CTN! Dia de reunir a família, comer aquele baião de dois caprichado, dançar forró e curtir o melhor do São João de nois tudim! 🎶🌽🔥 Vem pro Centro de Tradições Nordestinas e aproveita o nosso domingo cheio de alegria e sabor!</p><a target="_blank" title="♬ som original - Xique no Úrtimo" href="https://www.tiktok.com/music/som-original-7516285442883455800?refer=embed">♬ som original - Xique no Úrtimo</a> </section> </blockquote>
+            </div>
+        </section>
+
+
+        <!-- Interactive Calculator Section -->
+        <section id="calculadora" class="py-16 section-bg-texture rounded-2xl p-4 md:p-8">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl md:text-5xl text-brand-gold">Monte seu Plano de Sucesso</h2>
+                <p class="max-w-3xl mx-auto mt-4 text-gray-600">Selecione os serviços que mais se encaixam na sua estratégia e veja o plano personalizado sendo criado em tempo real. Ou, se preferir, confira nossos pacotes com desconto logo abaixo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+                <!-- Options -->
+                <div id="service-options">
+                    <div class="space-y-6">
+                        <!-- Gestão Semanal -->
+                        <div>
+                            <h3 class="font-display text-2xl text-brand-brown border-b-2 border-brand-gold/50 pb-2 mb-4">Gestão Semanal</h3>
+                            <div class="p-4 bg-white rounded-lg shadow-sm border">
+                                <label for="weekly_management" class="flex items-start cursor-pointer">
+                                    <input type="checkbox" id="weekly_management" data-price="2500" class="h-5 w-5 rounded border-gray-300 custom-checkbox mt-1">
+                                    <div class="ml-4 flex-grow">
+                                        <span class="font-bold text-gray-800">Conteúdo e Estratégia (Seg a Sex)</span>
+                                        <p class="text-sm text-gray-600">Planejamento e postagens para manter a marca aquecida.</p>
+                                    </div>
+                                    <span class="ml-auto font-bold text-gray-500">+ R$ 2.500</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Cobertura -->
+                        <div>
+                            <h3 class="font-display text-2xl text-brand-brown border-b-2 border-brand-gold/50 pb-2 mb-4">Cobertura de Fim de Semana (por dia de evento)</h3>
+                            <div class="space-y-3">
+                                <label for="friday_night" class="flex items-center p-4 bg-white rounded-lg shadow-sm cursor-pointer border">
+                                    <input type="checkbox" id="friday_night" data-price="400" class="h-5 w-5 rounded border-gray-300 custom-checkbox">
+                                    <div class="ml-4">
+                                        <span class="font-bold text-gray-800">Shows de Sexta à Noite 🌙</span>
+                                    </div>
+                                    <span class="ml-auto font-bold text-gray-500">+ R$ 400</span>
+                                </label>
+                                <label for="saturday_day" class="flex items-center p-4 bg-white rounded-lg shadow-sm cursor-pointer border">
+                                    <input type="checkbox" id="saturday_day" data-price="400" class="h-5 w-5 rounded border-gray-300 custom-checkbox">
+                                    <div class="ml-4">
+                                        <span class="font-bold text-gray-800">Almoço de Sábado ☀️</span>
+                                    </div>
+                                    <span class="ml-auto font-bold text-gray-500">+ R$ 400</span>
+                                </label>
+                                <label for="saturday_night" class="flex items-center p-4 bg-white rounded-lg shadow-sm cursor-pointer border">
+                                    <input type="checkbox" id="saturday_night" data-price="400" class="h-5 w-5 rounded border-gray-300 custom-checkbox">
+                                    <div class="ml-4">
+                                        <span class="font-bold text-gray-800">Shows de Sábado à Noite 🌙</span>
+                                    </div>
+                                    <span class="ml-auto font-bold text-gray-500">+ R$ 400</span>
+                                </label>
+                                <label for="sunday_day" class="flex items-center p-4 bg-white rounded-lg shadow-sm cursor-pointer border">
+                                    <input type="checkbox" id="sunday_day" data-price="400" class="h-5 w-5 rounded border-gray-300 custom-checkbox">
+                                    <div class="ml-4">
+                                        <span class="font-bold text-gray-800">Almoço de Domingo ☀️</span>
+                                    </div>
+                                    <span class="ml-auto font-bold text-gray-500">+ R$ 400</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Anuncios e Adicionais -->
+                        <div>
+                            <h3 class="font-display text-2xl text-brand-brown border-b-2 border-brand-gold/50 pb-2 mb-4">Serviços Adicionais</h3>
+                             <div class="space-y-3">
+                                <label for="anuncios" class="flex items-center p-4 bg-white rounded-lg shadow-sm cursor-pointer border">
+                                    <input type="checkbox" id="anuncios" data-price="2000" class="h-5 w-5 rounded border-gray-300 custom-checkbox">
+                                    <div class="ml-4">
+                                        <span class="font-bold text-gray-800">Gestão de Anúncios</span>
+                                        <p class="text-sm text-gray-600">Campanhas no Meta Ads (Face/Insta) e Google Ads.</p>
+                                    </div>
+                                    <span class="ml-auto font-bold text-gray-500">+ R$ 2.000</span>
+                                </label>
+                                <label for="atendimento" class="flex items-center p-4 bg-white rounded-lg shadow-sm cursor-pointer border">
+                                    <input type="checkbox" id="atendimento" data-price="500" class="h-5 w-5 rounded border-gray-300 custom-checkbox">
+                                    <div class="ml-4">
+                                        <span class="font-bold text-gray-800">Atendimento de Redes</span>
+                                        <p class="text-sm text-gray-600">Respostas a comentários e mensagens diretas.</p>
+                                    </div>
+                                    <span class="ml-auto font-bold text-gray-500">+ R$ 500</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="sticky top-24">
+                    <div class="bg-white rounded-2xl shadow-2xl p-8 flex flex-col border">
+                        <h3 class="font-display text-3xl text-brand-brown text-center">Seu Plano Personalizado</h3>
+                        <div id="summary-list" class="mt-6 space-y-2 border-t border-b border-gray-200 py-4 flex-grow">
+                            <!-- Items will be injected here by JS -->
+                        </div>
+                        <div class="mt-6 text-center">
+                            <p class="text-gray-500">Investimento Mensal:</p>
+                            <p id="total-price" class="font-display text-6xl text-brand-gold">R$ 0</p>
+                        </div>
+                        <button id="personalizado-cta-btn" class="mt-6 text-center w-full inline-block bg-brand-gold text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-amber-600 transition-all duration-300">
+                            Quero este plano personalizado!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Investment Packages Section -->
+        <section id="investimento" class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl md:text-5xl text-brand-gold">Nossos Pacotes (com Desconto!)</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-700">Para facilitar, criamos pacotes estratégicos com o melhor custo-benefício. O plano "Xique Completo" é a nossa recomendação para o máximo de impacto.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto items-stretch">
+                <!-- Plano 1 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 flex flex-col h-full border">
+                    <h3 class="font-display text-3xl text-brand-brown">Plano Essencial</h3>
+                    <p class="font-display text-5xl my-4 text-brand-brown">R$ 3.700</p>
+                    <ul class="space-y-3 text-gray-700 mt-6 flex-grow">
+                        <li class="flex"><span class="text-brand-gold mr-3">✓</span><strong>Gestão Semanal Completa</strong></li>
+                        <li class="flex"><span class="text-brand-gold mr-3">✓</span><strong>Cobertura 3x por semana</strong></li>
+                    </ul>
+                     <button data-plan="essencial" class="plan-cta-btn mt-6 text-center w-full inline-block bg-gray-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition-all duration-300">
+                        Quero este plano!
+                    </button>
+                </div>
+
+                <!-- Plano 2 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 flex flex-col h-full border">
+                    <h3 class="font-display text-3xl text-brand-brown">Plano Plus</h3>
+                    <p class="font-display text-5xl my-4 text-brand-brown">R$ 5.500</p>
+                    <ul class="space-y-3 text-gray-700 mt-6 flex-grow">
+                        <li class="flex"><span class="text-brand-gold mr-3">✓</span>Gestão Semanal Completa</li>
+                        <li class="flex"><span class="text-brand-gold mr-3">✓</span>Cobertura 3x por semana</li>
+                        <li class="flex"><span class="text-brand-gold mr-3">✓</span><strong>Gestão de Anúncios</strong></li>
+                    </ul>
+                     <button data-plan="plus" class="plan-cta-btn mt-6 text-center w-full inline-block bg-gray-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition-all duration-300">
+                        Quero este plano!
+                    </button>
+                </div>
+
+                <!-- Plano Recomendado -->
+                <div class="relative transform lg:scale-110">
+                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-gold text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg z-20">RECOMENDADO</div>
+                    <div class="aurora-border h-full">
+                        <div class="inner-card p-8 h-full flex flex-col text-brand-brown">
+                             <h3 class="font-display text-3xl text-brand-gold mt-4">Xique Completo</h3>
+                            <p class="font-display text-5xl my-4 text-brand-brown">R$ 6.000</p>
+                            <ul class="space-y-3 text-gray-700 mt-6 flex-grow">
+                                <li class="flex"><span class="text-brand-gold mr-3">✓</span>Gestão Semanal e Anúncios</li>
+                                <li class="flex"><span class="text-brand-gold mr-3">✓</span><strong>Cobertura Completa do Fim de Semana</strong></li>
+                                <li class="flex"><span class="text-brand-gold mr-3">✓</span><strong>Atendimento de Redes</strong></li>
+                            </ul>
+                            <button data-plan="completo" class="plan-cta-btn mt-6 text-center w-full inline-block bg-brand-gold text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-amber-600 transition-all duration-300">
+                                Quero este plano!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Próximos Passos -->
+        <section id="proximos-passos" class="py-16 section-bg-texture rounded-2xl p-4 md:p-8">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl md:text-5xl text-brand-brown">Próximos Passos</h2>
+                <p class="max-w-3xl mx-auto mt-4 text-gray-600">O caminho para o sucesso da sua marca é simples e transparente.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="mx-auto bg-brand-gold text-white rounded-full h-20 w-20 flex items-center justify-center text-4xl font-display mb-4 shadow-lg">1</div>
+                    <h3 class="font-display text-2xl text-brand-brown">Aprovação</h3>
+                    <p class="text-sm text-gray-500">Conversamos e damos o "ok" para começar.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto bg-brand-gold text-white rounded-full h-20 w-20 flex items-center justify-center text-4xl font-display mb-4 shadow-lg">2</div>
+                    <h3 class="font-display text-2xl text-brand-brown">Alinhamento</h3>
+                    <p class="text-sm text-gray-500">Definimos os detalhes e orientações.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto bg-brand-gold text-white rounded-full h-20 w-20 flex items-center justify-center text-4xl font-display mb-4 shadow-lg">3</div>
+                    <h3 class="font-display text-2xl text-brand-brown">Mãos na Massa!</h3>
+                    <p class="text-sm text-gray-500">Sua nova presença digital no ar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-12 mt-8 bg-brand-brown text-white">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQE01CvN2jlQFnahTE8JZ0xfGJEe5Ng_n1rykkMATq7a-shvDxEevsVUdGTf3Muk3S0Vu8n0Lv6tKdHsMaFLIQpmP5mPsQ9vKk2WCAIUEWhe4GKHF26axVpHpgM_0KYEJZYgyNuXMP-mRcmfugNIN9sOVn9TW0md9IthluiEySbdF_xrrERWTdKLyaN5A/s320/CTN%20Proposta.png" alt="Logo RP Digital" class="h-16 mx-auto mb-6">
+        <p class="font-display text-4xl text-brand-gold">Vamos nessa?</p>
+        <p class="mt-2 text-gray-300 max-w-2xl mx-auto">Acreditamos que o Xique no Úrtimo tem um potencial gigante. <br>Estamos prontos para mergulhar de cabeça nesse projeto e, juntos, fazer história.</p>
+        <p class="mt-6 font-bold text-lg opacity-80">RP Digital</p>
+    </footer>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4 transition-opacity duration-300 opacity-0">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full text-center transform scale-95 transition-transform duration-300">
+            <h3 class="font-display text-3xl text-brand-brown">Confirmar Seleção</h3>
+            <p class="text-gray-600 mt-2">Você está prestes a aprovar o plano abaixo. Por favor, confirme os detalhes antes de enviar.</p>
+            <div id="modal-plan-details" class="mt-6 text-left bg-gray-50 p-4 rounded-lg">
+                <!-- Plan details will be injected here -->
+            </div>
+            <div class="mt-8 flex gap-4">
+                <button id="cancel-button" class="w-full bg-gray-200 text-gray-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-all">Cancelar</button>
+                <a id="confirm-button" href="#" target="_blank" class="w-full text-center bg-brand-gold text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-amber-600 transition-all">Confirmar e Enviar</a>
+            </div>
+        </div>
+    </div>
+
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkboxes = document.querySelectorAll('#service-options input[type="checkbox"]');
+            const summaryList = document.getElementById('summary-list');
+            const totalPriceEl = document.getElementById('total-price');
+            const personalizadoCtaBtn = document.getElementById('personalizado-cta-btn');
+            const planCtaBtns = document.querySelectorAll('.plan-cta-btn');
+            
+            const modal = document.getElementById('confirmation-modal');
+            const modalContent = modal.querySelector('div');
+            const modalDetails = document.getElementById('modal-plan-details');
+            const confirmButton = document.getElementById('confirm-button');
+            const cancelButton = document.getElementById('cancel-button');
+
+            const services = {
+                weekly_management: { name: 'Gestão Semanal', price: 2500 },
+                anuncios: { name: 'Gestão de Anúncios', price: 2000 },
+                friday_night: { name: 'Cobertura Sexta (noite)', price: 400 },
+                saturday_day: { name: 'Cobertura Sábado (almoço)', price: 400 },
+                saturday_night: { name: 'Cobertura Sábado (noite)', price: 400 },
+                sunday_day: { name: 'Cobertura Domingo (almoço)', price: 400 },
+                atendimento: { name: 'Atendimento de Redes', price: 500 }
+            };
+            
+            const packages = {
+                essencial: {
+                    name: 'Plano Essencial',
+                    price: 3700,
+                    items: ['Gestão Semanal Completa', 'Cobertura 3x por semana (Sex-noite, Sáb-almoço, Dom-almoço)']
+                },
+                plus: {
+                    name: 'Plano Plus',
+                    price: 5500,
+                    items: ['Gestão Semanal Completa', 'Cobertura 3x por semana', 'Gestão de Anúncios']
+                },
+                completo: {
+                    name: 'Xique Completo',
+                    price: 6000,
+                    items: ['Gestão Semanal e Anúncios', 'Cobertura Completa do Fim de Semana', 'Atendimento de Redes']
+                }
+            };
+
+            const baseWhatsappUrl = 'https://wa.me/5511989684355?text=';
+
+            function generateWhatsappMessage(title, price, items) {
+                let message = `Olá! Tenho interesse na proposta para o Xique no Úrtimo e gostaria de aprovar o seguinte plano:\n\n*${title}*\n*Valor Mensal:* R$ ${price.toLocaleString('pt-BR')}\n`;
+                if(items && items.length > 0){
+                    items.forEach(item => {
+                        message += `\n- ${item}`;
+                    });
+                }
+                message += `\n\nPodemos seguir para os próximos passos?`;
+                return encodeURIComponent(message);
+            }
+
+            function openModal(details) {
+                 modalDetails.innerHTML = `
+                    <p class="font-bold text-lg text-brand-brown">${details.name}</p>
+                    <p class="font-bold text-brand-gold text-2xl">R$ ${details.price.toLocaleString('pt-BR')} / mês</p>
+                    <ul class="text-sm text-gray-600 mt-2 list-disc list-inside">
+                        ${details.items.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                `;
+                confirmButton.href = baseWhatsappUrl + generateWhatsappMessage(details.name, details.price, details.items);
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                    modalContent.classList.remove('scale-95');
+                }, 10);
+            }
+
+            function closeModal() {
+                modal.classList.add('opacity-0');
+                modalContent.classList.add('scale-95');
+                setTimeout(() => modal.classList.add('hidden'), 300);
+            }
+            
+            function updateSummary() {
+                let monthlyTotal = 0;
+                let summaryHTML = '';
+                
+                let weeklyCoverageDays = 0;
+                
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        const price = parseFloat(checkbox.dataset.price);
+                        const serviceId = checkbox.id;
+                        const serviceName = services[serviceId] ? services[serviceId].name : 'Serviço';
+
+                        if (serviceId.includes('_day') || serviceId.includes('_night')) {
+                            weeklyCoverageDays++;
+                        }
+                        
+                        monthlyTotal += price;
+                        summaryHTML += `<div class="flex justify-between items-center text-sm text-gray-700"><span>${serviceName}</span><span class="font-semibold">+ R$ ${price.toLocaleString('pt-BR')}</span></div>`;
+                    }
+                });
+                
+                summaryList.innerHTML = summaryHTML;
+                totalPriceEl.textContent = `R$ ${monthlyTotal.toLocaleString('pt-BR')}`;
+            }
+
+            checkboxes.forEach(checkbox => checkbox.addEventListener('change', updateSummary));
+            
+            personalizadoCtaBtn.addEventListener('click', () => {
+                let total = 0;
+                let selectedItems = [];
+
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        total += parseFloat(checkbox.dataset.price);
+                        selectedItems.push(services[checkbox.id].name);
+                    }
+                });
+
+                openModal({ name: 'Plano Personalizado', price: total, items: selectedItems });
+            });
+
+            planCtaBtns.forEach(button => {
+                button.addEventListener('click', () => {
+                    const planKey = button.dataset.plan;
+                    const plan = packages[planKey];
+                    openModal(plan);
+                });
+            });
+            
+            cancelButton.addEventListener('click', closeModal);
+            confirmButton.addEventListener('click', () => setTimeout(closeModal, 500));
+
+            // Set default state
+            document.querySelectorAll('#service-options input[type="checkbox"]:not(:disabled)').forEach(cb => cb.checked = false);
+            updateSummary();
+        });
+    </script>
+</body>
+</html>
+
