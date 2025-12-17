@@ -3,33 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proposta Estratégica - Ecossistema CTN & Rádio Atual</title>
+    <title>Proposta Estratégica - Rádio Atual & Meu Famoso Favorito</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
-        .bg-atual { background-color: #1e3a8a; }
-        .text-atual { color: #1e3a8a; }
-        .accent-bg { background-color: #f59e0b; }
-        .card-shadow { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        :root {
+            --cor-verde: #5CAC41;
+            --cor-laranja: #FE9101;
+            --cor-dark: #1a1a1a;
+        }
+
+        body { font-family: 'Inter', sans-serif; background-color: #f8faf9; color: #2d3748; }
+        
+        .brand-green { color: var(--cor-verde); }
+        .bg-brand-green { background-color: var(--cor-verde); }
+        .brand-orange { color: var(--cor-laranja); }
+        .bg-brand-orange { background-color: var(--cor-laranja); }
+        .bg-orange-header { background-color: var(--cor-laranja); }
+
+        .plan-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 850px; 
+            transition: all 0.3s ease;
+        }
+
+        .item-lista {
+            font-size: 14px;
+            line-height: 1.3;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            padding: 5px 0;
+        }
+
+        .recommended-shadow {
+            box-shadow: 0 25px 50px -12px rgba(254, 145, 1, 0.25);
+        }
     </style>
 </head>
 <body class="antialiased">
 
     <div class="max-w-6xl mx-auto p-4 md:p-12">
         
-        <!-- HEADER DE ALTO IMPACTO -->
-        <header class="bg-atual text-white p-10 md:p-16 rounded-[40px] shadow-2xl mb-12 relative overflow-hidden text-center md:text-left">
+        <!-- HEADER LIMPO E IMPACTANTE -->
+        <header class="bg-orange-header text-white p-10 md:p-20 rounded-[40px] shadow-2xl mb-12 relative overflow-hidden text-center md:text-left border-b-8 border-[#1a2e15]">
             <div class="relative z-10">
-                <span class="bg-amber-500 text-blue-900 px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest mb-4 inline-block shadow-sm">Proposta Estratégica</span>
-                <h1 class="text-5xl md:text-7xl font-black mb-4 tracking-tighter leading-none italic uppercase">
-                    Resgate de <br> Branding & Conexão
+                <span class="bg-white text-[#FE9101] px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest mb-6 inline-block shadow-sm">Proposta Estratégica Digital</span>
+                <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter leading-none italic uppercase">
+                    Resgate de <br> <span class="text-[#1a2e15]">Branding</span> & Conexão
                 </h1>
-                <p class="text-xl md:text-2xl font-light opacity-80 max-w-2xl">
-                    Uma estratégia baseada em <span class="font-bold">talento, autoridade e resultados reais</span> para a Rádio Atual e o ecossistema CTN.
+                <p class="text-xl md:text-2xl font-light opacity-90 max-w-2xl leading-relaxed">
+                    Uma estratégia baseada em <span class="font-bold border-b-2 border-white">Autoridade, Experiência e Resultados</span> para a Rádio Atual e o ecossistema CTN.
                 </p>
             </div>
-            <div class="absolute right-[-5%] top-[-10%] opacity-10 text-[15rem] font-black italic select-none hidden md:block">94.1</div>
+            <div class="absolute right-[-5%] top-[-10%] opacity-20 text-[20rem] font-black italic select-none hidden md:block text-white">94.1</div>
         </header>
 
         <!-- DIAGNÓSTICO E ESTRATÉGIA -->
@@ -37,26 +68,29 @@
             <div class="flex flex-col md:flex-row gap-8 items-stretch">
                 <div class="flex-1 bg-white p-10 rounded-[35px] shadow-sm border border-gray-100 flex flex-col justify-between">
                     <div>
-                        <h2 class="text-3xl font-black text-atual mb-6 italic uppercase tracking-tight">O Diagnóstico de Autoridade</h2>
-                        <p class="text-gray-600 leading-relaxed text-lg mb-6">
-                            A análise técnica do ecossistema CTN revela que o sucesso digital está diretamente ligado à <span class="font-bold">Estratégia de Humanização e Conexão</span>. Meu trabalho foca no resgate da identidade que transformou as redes em uma comunidade vibrante.
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="https://www.radioatual.com.br/wp-content/uploads/2022/05/ddd-04.png" alt="Logo Rádio Atual" class="h-10 object-contain">
+                            <h2 class="text-2xl font-black brand-green italic uppercase tracking-tight">O Diagnóstico De Autoridade</h2>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-lg mb-6 italic">
+                            A análise do ecossistema CTN demonstra que os melhores resultados digitais sempre estiveram ligados à <span class="font-bold text-gray-800">Humanização Da Marca</span> e à conexão emocional.
                         </p>
                         <p class="text-gray-600 leading-relaxed text-lg mb-6">
-                            O diagnóstico atual mostra que existe uma lacuna de engajamento que só pode ser preenchida com <span class="font-bold">Resgate de Identidade e Experiência</span>.
+                            Identificamos uma <span class="font-bold brand-orange uppercase italic tracking-wide">Oportunidade De Ouro</span> para o resgate dessa identidade, transformando audiência em comunidade ativa.
                         </p>
                     </div>
-                    <!-- Link para o Canva -->
-                    <a href="https://www.canva.com/design/DAG7uIrmiTA/C4PjZkJnjCdu_YvmhSEfTw/view?utm_content=DAG7uIrmiTA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb52dd45541#1" target="_blank" class="inline-flex items-center justify-center gap-2 bg-atual text-white font-bold py-4 px-6 rounded-2xl hover:bg-blue-800 transition shadow-lg text-sm uppercase tracking-wider group">
-                        Ver Diagnóstico Completo (PPT)
+                    <a href="https://www.canva.com/design/DAG7uIrmiTA/C4PjZkJnjCdu_YvmhSEfTw/view?utm_content=DAG7uIrmiTA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb52dd45541#1" target="_blank" class="inline-flex items-center justify-center gap-2 bg-brand-green text-white font-bold py-4 px-6 rounded-2xl hover:brightness-110 transition shadow-lg text-sm uppercase tracking-wider group">
+                        Ver Material Estratégico Completo
                         <svg class="w-4 h-4 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                     </a>
                 </div>
-                <div class="flex-1 bg-atual text-white p-10 rounded-[35px] shadow-2xl flex flex-col justify-center">
-                    <div class="text-4xl font-black mb-2 italic uppercase">Branding & Experiência</div>
-                    <div class="text-amber-500 font-bold uppercase tracking-widest text-sm mb-6">Foco na Conexão Humana</div>
-                    <div class="h-1 bg-amber-500 w-24 mb-6"></div>
-                    <p class="text-lg opacity-90 italic leading-relaxed">
-                        "Resultados consistentes nascem de uma estratégia que entende o comportamento do fã e o valor emocional que a Rádio e o CTN representam."
+                <div class="flex-1 bg-white p-10 rounded-[35px] shadow-md border-t-8 border-[#5CAC41] flex flex-col justify-center text-center">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr6mtVRXW53d-y4irEv7LL8sR2SRKLA0r1JKUlqviCqgx_lUZ4wlIsl4L0521kluUI7M4QtHjsUQlH7YMqNIqPYPmVWFQOKincmwsE-Hznqs5p-U3ZfOZhKr0UFqOMLWGUELoupTpw2QCUGBlDD-G46sP-RYJ35a1nH6Dx5WvTkskH_pTkAuqLImGc0Hk/s320/LOGO%20MEU%20FAMOSO%20FAVORITO.png" alt="Logo Meu Famoso Favorito" class="h-20 mx-auto mb-6 object-contain">
+                    <div class="text-3xl font-black mb-2 italic uppercase brand-green leading-tight">Branding & Experiência</div>
+                    <div class="text-gray-400 font-bold uppercase tracking-widest text-sm mb-6 font-medium">Conexão Humana Em Primeiro Lugar</div>
+                    <div class="h-1 bg-brand-orange w-24 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-700 opacity-90 italic leading-relaxed font-medium">
+                        "Resultados consistentes nascem de estratégias que entendem o comportamento do fã e o valor emocional que a Rádio Atual representa."
                     </p>
                 </div>
             </div>
@@ -65,128 +99,147 @@
         <!-- O ESPELHO DO SUCESSO -->
         <section class="bg-white p-10 md:p-16 rounded-[40px] shadow-sm border border-gray-100 mb-16">
             <div class="max-w-4xl">
-                <h2 class="text-3xl md:text-4xl font-black text-atual mb-6 italic uppercase">O "Espelho" do Sucesso: @meufamosofavorito</h2>
+                <h2 class="text-3xl md:text-4xl font-black text-atual mb-6 italic uppercase tracking-tighter">O "Espelho" do Sucesso: Meu Famoso Favorito</h2>
                 <p class="text-xl text-gray-700 leading-relaxed mb-8">
-                    A página <span class="font-bold">@meufamosofavorito</span> é o <span class="font-bold">Mockup em Tempo Real</span> do que a Rádio Atual deve ser no digital para gerar desejo e engajamento:
+                    O perfil <span class="font-bold">Meu Famoso Favorito</span> funciona hoje como um <span class="font-bold italic">Mockup em Tempo Real</span> e validado do posicionamento digital ideal para a Rádio Atual:
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                 <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
-                    <h3 class="font-black text-atual text-xl mb-2 italic uppercase tracking-tighter">70 Milhões</h3>
-                    <p class="text-sm text-gray-500">Visualizações orgânicas que validam o formato e a aceitação imediata do público.</p>
+                    <h3 class="font-black text-atual text-xl mb-2 italic uppercase tracking-tighter text-blue-800">+70 Milhões</h3>
+                    <p class="text-sm text-gray-500 font-medium">Visualizações orgânicas que comprovam aceitação imediata do formato pelo público.</p>
                 </div>
                 <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
                     <h3 class="font-black text-atual text-xl mb-2 italic uppercase tracking-tighter">Validação</h3>
-                    <p class="text-sm text-gray-500">Um canal onde artistas e fãs já se conectam e validam nossa narrativa diariamente.</p>
+                    <p class="text-sm text-gray-500 font-medium">Um canal onde artistas, fãs e marcas já se conectam e validam nossa narrativa diariamente.</p>
                 </div>
                 <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
-                    <h3 class="font-black text-atual text-xl mb-2 italic uppercase tracking-tighter">Laboratório</h3>
-                    <p class="text-sm text-gray-500">O sucesso do MFF é o modelo pronto para ser aplicado na nova fase da Rádio Atual.</p>
+                    <h3 class="font-black text-atual text-xl mb-2 italic uppercase tracking-tighter">Laboratório Ativo</h3>
+                    <p class="text-sm text-gray-500 font-medium">O sucesso do MFF é o modelo pronto para ser aplicado na nova fase da Rádio Atual.</p>
                 </div>
             </div>
         </section>
 
         <!-- PLANOS DE INVESTIMENTO -->
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-black text-atual uppercase italic">Planos de Investimento</h2>
-            <p class="text-gray-500 mt-2 text-lg italic">Escolha o nível de impacto para o ecossistema Rádio & CTN.</p>
+            <h2 class="text-4xl font-black text-atual uppercase italic tracking-tighter">Planos De Investimento</h2>
+            <p class="text-gray-500 mt-2 text-lg italic font-medium">Escopo detalhado com foco em expansão e legado digital.</p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
             
             <!-- PLANO 1: DIGITAL ESSENTIAL -->
-            <div class="bg-white p-8 rounded-[35px] shadow-lg border border-gray-100 flex flex-col h-full transition hover:shadow-xl">
-                <h3 class="text-xl font-black text-gray-400 mb-2 uppercase italic tracking-tighter">Digital Essential</h3>
-                <p class="text-sm text-gray-500 mb-6 font-medium uppercase tracking-tighter">Alcance & Vídeos Curtos</p>
-                <div class="text-4xl font-black text-atual mb-8 tracking-tighter">R$ 6.000<span class="text-sm font-normal text-gray-400 block mt-1 uppercase tracking-normal">Investimento Mensal</span></div>
+            <div class="plan-card bg-white p-8 rounded-[35px] shadow-lg border-b-8 border-gray-200 transition hover:shadow-xl">
+                <div class="mb-8">
+                    <h3 class="text-xl font-black text-gray-400 mb-1 uppercase italic tracking-tighter">Digital Essential</h3>
+                    <p class="text-[10px] text-gray-500 mb-6 font-bold uppercase tracking-widest italic">Alcance & Vídeos Curtos</p>
+                    <div class="text-4xl font-black text-gray-800 tracking-tighter italic">R$ 7.000<span class="text-[10px] font-normal text-gray-400 block mt-1 uppercase tracking-normal">Investimento Mensal</span></div>
+                </div>
                 
                 <ul class="space-y-4 mb-10 flex-grow">
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="text-green-500 font-black mt-1">✓</span>
-                        <span class="font-semibold text-gray-700">Gestão TikTok & YouTube Shorts (Rádio/CTN)</span>
+                    <li class="item-lista text-gray-700">
+                        <span class="text-[#5CAC41] text-lg">✓</span>
+                        <span>Gestão TikTok CTN</span>
                     </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="text-green-500 font-black mt-1">✓</span>
-                        <span class="font-semibold text-gray-700">Planejamento Focado em Viralização</span>
+                    <li class="item-lista text-gray-700">
+                        <span class="text-[#5CAC41] text-lg">✓</span>
+                        <span>Gestão TikTok Rádio Atual</span>
                     </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="text-green-500 font-black mt-1">✓</span>
-                        <span class="font-semibold text-gray-700">Monitoramento Diário de Performance</span>
+                    <li class="item-lista text-gray-700">
+                        <span class="text-[#5CAC41] text-lg">✓</span>
+                        <span>Gestão Canal YouTube Shorts Rádio Atual</span>
+                    </li>
+                    <li class="item-lista text-gray-700">
+                        <span class="text-[#5CAC41] text-lg">✓</span>
+                        <span>Planejamento Focado Em Viralização</span>
+                    </li>
+                    <li class="item-lista text-gray-700">
+                        <span class="text-[#5CAC41] text-lg">✓</span>
+                        <span>Monitoramento Diário De Performance</span>
+                    </li>
+                    <li class="item-lista text-gray-700">
+                        <span class="text-[#5CAC41] text-lg">✓</span>
+                        <span>Relatório Mensal De Resultados</span>
+                    </li>
+                    <li class="item-lista text-gray-700">
+                        <span class="text-[#5CAC41] text-lg font-bold">✓</span>
+                        <span>Cobertura Show De Sexta No Meu Famoso Favorito</span>
                     </li>
                 </ul>
-                <a href="https://api.whatsapp.com/send/?phone=5511989684355&text=Olá Rafael! Escolhi o plano Digital Essential para a Rádio Atual. Podemos conversar?" target="_blank" class="w-full py-4 bg-slate-100 text-slate-600 font-black rounded-2xl uppercase text-xs tracking-widest text-center hover:bg-slate-200 transition">Escolhi esse plano</a>
+                <a href="https://api.whatsapp.com/send/?phone=5511989684355&text=Olá Rafael! Gostaria de iniciar com a estratégia Digital Essential para a Rádio Atual." target="_blank" class="w-full py-4 bg-[#1a2e15] text-white font-black rounded-2xl uppercase text-[10px] tracking-widest text-center hover:bg-black transition">Ativar Plano De Base</a>
             </div>
 
             <!-- PLANO 2: PRO ESTRATÉGICO -->
-            <div class="bg-atual text-white p-10 rounded-[40px] shadow-2xl border-t-[12px] border-amber-500 flex flex-col h-full transform lg:scale-105 z-10 relative transition hover:shadow-amber-500/20">
-                <div class="absolute top-4 right-6 bg-amber-500 text-atual text-[10px] font-black px-3 py-1 rounded-full uppercase shadow-sm">Recomendado</div>
-                <h3 class="text-2xl font-black mb-2 uppercase italic tracking-tighter">Pro Estratégico</h3>
-                <p class="text-sm opacity-70 mb-6 font-medium uppercase tracking-tighter">Branding & Divulgação @MFF</p>
-                <div class="text-5xl font-black text-amber-500 mb-8 tracking-tighter">R$ 9.000<span class="text-sm font-normal text-white block opacity-60 mt-1 uppercase tracking-normal">Investimento Mensal</span></div>
+            <div class="plan-card bg-white p-10 rounded-[40px] border-4 border-[#FE9101] transform lg:scale-105 z-10 relative transition recommended-shadow">
+                <div class="absolute top-4 right-6 bg-[#FE9101] text-white text-[10px] font-black px-3 py-1 rounded-full uppercase shadow-sm italic tracking-tighter">O Mais Escolhido</div>
+                <div class="mb-8 text-center md:text-left">
+                    <h3 class="text-2xl font-black brand-orange mb-1 uppercase italic tracking-tighter">Pro Estratégico</h3>
+                    <p class="text-[10px] text-gray-400 mb-6 font-bold uppercase tracking-widest italic tracking-tighter">Branding & Divulgação @Meu Famoso Favorito</p>
+                    <div class="text-5xl font-black text-gray-800 tracking-tighter italic">R$ 9.000<span class="text-[10px] font-normal text-gray-400 block mt-1 uppercase tracking-normal">Investimento Mensal</span></div>
+                </div>
                 
                 <ul class="space-y-4 mb-10 flex-grow">
-                    <li class="flex items-start gap-3 text-sm opacity-80">
-                        <span class="text-amber-500 font-black mt-1">✓</span>
-                        <span class="font-medium">Gestão TikTok & YouTube Shorts (Rádio/CTN)</span>
+                    <li class="item-lista text-gray-400"><span>✓</span> <span>Gestão TikTok CTN</span></li>
+                    <li class="item-lista text-gray-400"><span>✓</span> <span>Gestão TikTok Rádio Atual</span></li>
+                    <li class="item-lista text-gray-400"><span>✓</span> <span>Gestão Canal YouTube Shorts Rádio Atual</span></li>
+                    <li class="item-lista text-gray-400"><span>✓</span> <span>Planejamento Focado Em Viralização</span></li>
+                    <li class="item-lista text-gray-400"><span>✓</span> <span>Monitoramento Diário De Performance</span></li>
+                    <li class="item-lista text-gray-400"><span>✓</span> <span>Relatório Mensal De Resultados</span></li>
+                    <li class="item-lista text-gray-400"><span>✓</span> <span>Cobertura Show De Sexta No Meu Famoso Favorito</span></li>
+                    
+                    <li class="item-lista brand-orange border-t border-gray-100 pt-4">
+                        <span class="text-lg">★</span>
+                        <span class="font-black uppercase tracking-tight italic leading-none">Divulgação De Venda Dos Ingressos</span>
                     </li>
-                    <li class="flex items-start gap-3 text-sm opacity-80 mb-4">
-                        <span class="text-amber-500 font-black mt-1">✓</span>
-                        <span class="font-medium">Planejamento Focado em Viralização</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm border-t border-white/10 pt-4">
-                        <span class="text-amber-400 font-black mt-1">✓</span>
-                        <span class="font-black uppercase text-amber-300">Cobertura + Divulgação @meufamosofavorito</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="text-amber-400 font-black mt-1">✓</span>
-                        <span class="font-black text-amber-300 uppercase italic">Gravação com Artistas FORA DO CTN</span>
+                    <li class="item-lista brand-orange">
+                        <span class="text-lg">★</span>
+                        <span class="font-black uppercase tracking-tight italic leading-none">Gravação Com Artistas Fora Do CTN</span>
                     </li>
                 </ul>
-                <a href="https://api.whatsapp.com/send/?phone=5511989684355&text=Olá Rafael! Escolhi o plano Pro Estratégico para a Rádio Atual. Esse é o nível de branding que precisamos!" target="_blank" class="w-full py-5 accent-bg text-blue-900 font-black rounded-2xl uppercase text-xs tracking-widest shadow-xl hover:scale-105 transition text-center active:scale-95">Escolhi esse plano</a>
+                <a href="https://api.whatsapp.com/send/?phone=5511989684355&text=Olá Rafael! O plano Pro Estratégico é o ideal para o nosso resgate de branding e divulgação." target="_blank" class="w-full py-5 bg-[#FE9101] text-white font-black rounded-2xl uppercase text-xs tracking-widest shadow-xl hover:brightness-110 transition text-center active:scale-95">Selecionar Estratégia</a>
             </div>
 
             <!-- PLANO 3: PREMIUM 360 -->
-            <div class="bg-white p-8 rounded-[35px] shadow-lg border border-gray-100 flex flex-col h-full transition hover:shadow-xl">
-                <h3 class="text-xl font-black text-red-600 mb-2 uppercase italic tracking-tighter">Premium 360</h3>
-                <p class="text-sm text-gray-500 mb-6 font-medium uppercase tracking-tighter">Ecossistema Completo & Coberturas</p>
-                <div class="text-4xl font-black text-atual mb-8 tracking-tighter">R$ 12.000<span class="text-sm font-normal text-gray-400 block mt-1 uppercase tracking-normal">Investimento Mensal</span></div>
+            <div class="plan-card bg-white p-8 rounded-[35px] shadow-lg border-b-8 border-gray-200 transition hover:shadow-xl">
+                <div class="mb-8">
+                    <h3 class="text-xl font-black brand-green mb-1 uppercase italic tracking-tighter">Premium 360</h3>
+                    <p class="text-[10px] text-gray-500 mb-6 font-bold uppercase tracking-widest italic tracking-tighter">Ecossistema & Presença FDS</p>
+                    <div class="text-4xl font-black text-gray-800 tracking-tighter italic">R$ 12.000<span class="text-[10px] font-normal text-gray-400 block mt-1 uppercase tracking-normal">Investimento Mensal</span></div>
+                </div>
                 
                 <ul class="space-y-4 mb-10 flex-grow">
-                    <li class="flex items-start gap-3 text-[13px] opacity-60">
-                        <span class="text-gray-400 font-black mt-1">✓</span>
-                        <span>Gestão TikTok & YouTube Shorts (Rádio/CTN)</span>
+                    <li class="item-lista text-gray-300"><span>✓</span> <span class="text-[11px]">Gestão TikTok / YouTube / Performance</span></li>
+                    <li class="item-lista text-gray-300"><span>✓</span> <span class="text-[11px]">Divulgação Ingressos / Meu Famoso Favorito / Artistas</span></li>
+                    <li class="item-lista text-gray-300"><span>✓</span> <span class="text-[11px]">Cobertura Show De Sexta No Meu Famoso Favorito</span></li>
+                    
+                    <li class="item-lista brand-green border-t border-gray-100 pt-4">
+                        <span class="text-lg font-black">★</span>
+                        <span class="font-black uppercase italic tracking-tight leading-none">Cobertura Almoço Ou Show (Sábado)</span>
                     </li>
-                    <li class="flex items-start gap-3 text-[13px] opacity-60">
-                        <span class="text-gray-400 font-black mt-1">✓</span>
-                        <span>Cobertura + Divulgação @meufamosofavorito</span>
+                    <li class="item-lista brand-green">
+                        <span class="text-lg font-black">★</span>
+                        <span class="font-black uppercase italic tracking-tight leading-none">Cobertura Almoço (Domingo)</span>
                     </li>
-                    <li class="flex items-start gap-3 text-[13px] opacity-60">
-                        <span class="text-gray-400 font-black mt-1">✓</span>
-                        <span>Gravação com Artistas FORA DO CTN</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-[13px] border-t border-gray-100 pt-4">
-                        <span class="text-red-500 font-black mt-1">✓</span>
-                        <span class="font-black text-red-600 uppercase">Cobertura Show de Sexta-feira</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-[13px]">
-                        <span class="text-red-500 font-black mt-1">✓</span>
-                        <span class="font-black text-red-600 uppercase italic text-[11px]">Almoço OU Show da Atual (Sábado)</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-[13px]">
-                        <span class="text-red-600 font-black mt-1">✓</span>
-                        <span class="font-black text-red-600 uppercase italic">Cobertura Almoço (Domingo)</span>
+                    <li class="item-lista brand-green">
+                        <span class="text-lg font-black">★</span>
+                        <span class="font-black uppercase italic tracking-tight leading-none">Experiência Completa Do Público</span>
                     </li>
                 </ul>
-                <a href="https://api.whatsapp.com/send/?phone=5511989684355&text=Olá Rafael! Escolhi o plano Premium 360. Quero a solução completa para o ecossistema Rádio e CTN!" target="_blank" class="w-full py-4 border-2 border-red-100 text-red-600 font-black rounded-2xl uppercase text-xs tracking-widest text-center hover:bg-red-50 transition">Escolhi esse plano</a>
+                <a href="https://api.whatsapp.com/send/?phone=5511989684355&text=Olá Rafael! Queremos a solução Premium 360 para dominar o ecossistema digital nos finais de semana." target="_blank" class="w-full py-4 border-2 border-[#5CAC41] brand-green font-black rounded-2xl uppercase text-[10px] tracking-widest text-center hover:bg-[#5CAC41] hover:text-white transition uppercase">Plano De Expansão Total</a>
             </div>
 
         </div>
 
-        <!-- RODAPÉ FINAL -->
-        <footer class="mt-20 text-center pb-12 border-t border-gray-100 pt-12">
-            <p class="text-gray-400 font-bold mb-6 uppercase tracking-[0.2em] text-xs italic">Rafael Sposito &bull; RP Digital &bull; @meufamosofavorito</p>
+        <!-- RODAPÉ ASSINADO -->
+        <footer class="mt-20 text-center pb-12 border-t border-gray-200 pt-12">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
+                <img src="https://www.radioatual.com.br/wp-content/uploads/2022/05/ddd-04.png" alt="Rádio Atual" class="h-10 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                <div class="h-8 w-px bg-gray-200 hidden md:block"></div>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr6mtVRXW53d-y4irEv7LL8sR2SRKLA0r1JKUlqviCqgx_lUZ4wlIsl4L0521kluUI7M4QtHjsUQlH7YMqNIqPYPmVWFQOKincmwsE-Hznqs5p-U3ZfOZhKr0UFqOMLWGUELoupTpw2QCUGBlDD-G46sP-RYJ35a1nH6Dx5WvTkskH_pTkAuqLImGc0Hk/s320/LOGO%20MEU%20FAMOSO%20FAVORITO.png" alt="Meu Famoso Favorito" class="h-10 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300">
+            </div>
+            <p class="text-gray-400 font-bold mb-6 uppercase tracking-[0.2em] text-[10px] italic">Rafael Sposito &bull; RP Digital &bull; @meufamosofavorito</p>
             <div class="inline-flex flex-col md:flex-row gap-4 items-center">
-                <a href="https://api.whatsapp.com/send/?phone=5511989684355&text=Olá Rafael! Vi sua proposta para a Rádio Atual e gostaria de tirar algumas dúvidas." target="_blank" class="bg-white shadow-sm border border-gray-100 px-10 py-4 rounded-full font-black text-atual tracking-tight hover:shadow-md transition">
+                <a href="https://api.whatsapp.com/send/?phone=5511989684355" target="_blank" class="bg-white shadow-sm border border-gray-200 px-10 py-4 rounded-full font-black brand-green tracking-tight hover:shadow-md transition">
                     (11) 98968-4355
                 </a>
                 <span class="text-gray-300 hidden md:block">|</span>
